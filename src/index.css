@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  font-family: 'Varela Round', sans-serif;  
+}
+
+body {
+  padding: 60px;
+  background-color: #160f30;
+
+}
+
+.color-category {
+  color: whitesmoke;
+  font-size: 3.5rem;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9800df,
+      0 0 40px #9800df, 0 0 50px #9800df, 0 0 60px #9800df, 0 0 70px #9800df;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #9800df, 0 0 20px #9800df,
+      0 0 50px #9800df, 0 0 60px #9800df, 0 0 70px #9800df, 0 0 80px #9800df;
+  }
+}
+
+
+input[type=text] {
+  color: #333;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 300px;
+}
+
+
+.card img {
+  max-height: 160px;
+}
